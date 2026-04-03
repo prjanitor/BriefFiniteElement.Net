@@ -115,8 +115,8 @@ namespace BriefFiniteElementNet.Mathh
                 foreach (var tuple in eq.EnumerateIndexed())
                 {
                     var rw = i;//tuple.Item1;
-                    var col = tuple.Item1;//tuple.Item2;
-                    var val = tuple.Item2;
+                    var col = tuple.Item2;
+                    var val = tuple.Item3;
 
                     if (col != lastCol)
                         colNnzs[col]++;
